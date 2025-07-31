@@ -1,0 +1,25 @@
+{
+  "meta_title": "ইশা পশ্চিমবঙ্গ",
+  "nav_links": {
+    "home": "হোম",
+    "about": "আমাদের সম্পর্কে",
+    "programs": "প্রোগ্রাম",
+    "events": "ইভেন্ট",
+    "contact": "যোগাযোগ"
+  },
+  "home_page_content": "",
+  "footer": {
+    "copyright": "© ২০২৫ ইশা ফাউন্ডেশন। সর্বস্বত্ব সংরক্ষিত।",
+    "subscribe_title": "আপডেটের জন্য সাবস্ক্রাইব করুন",
+    "subscribe_text": "ইভেন্ট এবং প্রোগ্রাম সম্পর্কে অবগত থাকতে আমাদের নিউজলেটারে যোগ দিন।",
+    "subscribe_button": "এখনই সাবস্ক্রাইব করুন",
+    "contact_title": "যোগাযোগ করুন",
+    "contact_address": "ইশা যোগ কেন্দ্র, ভেল্লিয়াঙ্গিরি পাদদেশ, ইশানা বিহার পোস্ট, কোয়েম্বাটোর - ৬৪১১১৪",
+    "contact_phone": "+৯১ ৮৩০০০ ৮৩০০০",
+    "contact_email": "support@ishafoundation.org",
+    "contact_other_centers": "অন্যান্য কেন্দ্র খুঁজুন",
+    "download_title": "সদগুরু অ্যাপ ডাউনলোড করুন",
+    "app_ios": "অ্যাপ স্টোরে ডাউনলোড করুন",
+    "app_android": "গুগল প্লে থেকে ডাউনলোড করুন"
+  }
+}

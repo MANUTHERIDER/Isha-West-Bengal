@@ -1,0 +1,25 @@
+{
+  "meta_title": "ईशा पश्चिम बंगाल",
+  "nav_links": {
+    "home": "होम",
+    "about": "हमारे बारे में",
+    "programs": "कार्यक्रम",
+    "events": "आयोजन",
+    "contact": "संपर्क"
+  },
+  "home_page_content": "",
+  "footer": {
+    "copyright": "© 2025 ईशा फाउंडेशन। सर्वाधिकार सुरक्षित।",
+    "subscribe_title": "अपडेट के लिए सदस्यता लें",
+    "subscribe_text": "घटनाओं और कार्यक्रमों के बारे में सूचित रहने के लिए हमारे न्यूज़लेटर से जुड़ें।",
+    "subscribe_button": "अभी सदस्यता लें",
+    "contact_title": "हमसे संपर्क करें",
+    "contact_address": "ईशा योग केंद्र, वेल्लिंगिरी तलहटी, ईशाना विहार पोस्ट, कोयम्बटूर - 641114",
+    "contact_phone": "+91 83000 83000",
+    "contact_email": "support@ishafoundation.org",
+    "contact_other_centers": "अन्य केंद्र खोजें",
+    "download_title": "सद्गुरु ऐप डाउनलोड करें",
+    "app_ios": "ऐप स्टोर पर डाउनलोड करें",
+    "app_android": "गूगल प्ले पर प्राप्त करें"
+  }
+}

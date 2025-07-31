@@ -1,0 +1,84 @@
+{
+    "meta_title": "Isha West Bengal",
+    "header_title": "ISHA WEST BENGAL",
+    "disclaimer_text": "THIS WEBSITE BELONGS TO YOG SO USE BRIGHT COLORS",
+    "nav_links": {
+        "home": "Home",
+        "about": "About",
+        "programs": "Programs",
+        "events": "Events",
+        "contact": "Contact"
+    },
+    "milestones_title": "Current Year Isha Milestones",
+    "milestones": [
+        "Milestone 1: Successful Completion of Yogathon",
+        "Milestone 2: New Center Inauguration in Kolkata",
+        "Milestone 3: 5,000 New Volunteers Joined",
+        "Milestone 4: Online Sessions for a New Program",
+        "Milestone 5: Community Service Drive"
+    ],
+    "upcoming_dates_title": "IEO Bangla Upcoming Dates",
+    "upcoming_dates": [
+        {
+            "date": "Aug 20-22",
+            "location": "Kolkata Session"
+        },
+        {
+            "date": "Sep 15-18",
+            "location": "Digha Retreat"
+        },
+        {
+            "date": "Oct 10-12",
+            "location": "Online Workshop"
+        }
+    ],
+    "physical_programs_title": "PHYSICAL PROGRAMS",
+    "physical_programs": [
+        "Program A",
+        "Program B",
+        "Program C",
+        "Program D",
+        "Program E",
+        "Program F"
+    ],
+    "regular_events_title": "YEARLY / NON - REGULAR EVENTS",
+    "regular_events": [
+        {
+            "name": "MSR",
+            "content": "Content"
+        },
+        {
+            "name": "DEVI DARSHAN",
+            "content": "Content"
+        },
+        {
+            "name": "SG DARSHAN",
+            "content": "Content"
+        }
+    ],
+    "social_media_title": "Connect With Us",
+    "contact_form_title": "CONTACT US",
+    "contact_form": {
+        "name_label": "Name",
+        "email_label": "Email",
+        "subject_label": "Subject",
+        "message_label": "Message",
+        "placeholder_name": "Name",
+        "placeholder_email": "Email",
+        "placeholder_subject": "Subject",
+        "placeholder_message": "Message",
+        "button": "Send Message"
+    },
+    "footer": {
+        "subscribe_title": "Subscribe",
+        "subscribe_text": "Join 1.2 Million people from around the world, get wisdom articles delivered in the mailbox for free.",
+        "subscribe_button": "Subscribe Now",
+        "contact_title": "Contact Us",
+        "contact_address": "India<br>Isha Yoga Centre,<br>Velliangiri Foothills,<br>Ishana Vihar Post,<br>Coimbatore, Tamil Nadu - 641114",
+        "contact_phone": "+91 83000 83111, 04224283111, 04223538311",
+        "contact_email": "support.ishafoundation.org",
+        "contact_other_centers": "Other Centres",
+        "download_title": "Download Sadhguru App",
+        "copyright": "© 1999 - 2024 Isha Foundation. All Rights Reserved. | Terms & Conditions | Privacy Policy"
+    }
+}

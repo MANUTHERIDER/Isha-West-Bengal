@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+/* Custom Variables for a Bright Theme */
+:root {
+    --primary-bg: #f5f5f5;
+    --secondary-bg: #ffffff;
+    --accent-color: #ff5722; /* Vibrant Orange */
+    --highlight-color: #ff9800; /* Bright Yellow */
+    --text-dark: #222;
+    --text-light: #fff;
+    --border-color: #ddd;
+    --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+/* App Header (contains the navbar) */
+/* .app-header {
+    background: linear-gradient(135deg, var(--highlight-color), var(--accent-color));
+    color: var(--text-light);
+    box-shadow: var(--box-shadow);
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+} */
+
+/* App Header (contains the navbar) */
+
+
+/* .app-header {
+    background: var(--text-dark); 
+    color: var(--text-light);
+    box-shadow: var(--box-shadow);
+} */
+
+
+/* New Hero Section container to hold the header and image */
+.hero-section {
+    position: relative;
+    height: 81vh; 
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/* App Header (now transparent and positioned over the image) */
+.app-header {
+    background-color: transparent; /* Makes the navbar fully transparent */
+    box-shadow: none; /* Removes the box shadow */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Ensures the navbar is always on top of the image */
+}
+
+/* Navbar links and buttons will now have a subtle shadow for readability */
+.nav-links a,
+.lang-switcher button {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* The cover photo now fills the entire hero section */
+.cover-photo {
+    height: 100%; /* Changed from 60vh to 100% to fill the parent container */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cover-photo h2 {
+    position: relative;
+    z-index: 10;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Added text shadow for visibility */
+}
+
+.image-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+/* ... existing styles for .nav-links, .lang-switcher, etc. remain the same ... */
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+/* .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-light);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+} */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-light); /* Links are white by default */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; /* Transition for a smooth color change */
+    padding: 5px 0;
+    position: relative;
+}
+
+/* On hover or when a link is active, change the text color to the accent orange */
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent-color);
+}
+
+/* We can remove the underline effect entirely with these rules */
+.nav-links a::after {
+    content: none; /* This removes the underline pseudo-element */
+}
+
+
+/* .lang-switcher button {
+    background: none;
+    border: 2px solid var(--text-light);
+    color: var(--text-light);
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+} */
+
+.lang-switcher button {
+    background: none;
+    border: 2px solid var(--text-light);
+    color: var(--text-light);
+    padding: 10px; /* Changed padding to make the buttons square */
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 6px; /* A slight default roundness */
+    cursor: pointer;
+    transition: all 0.4s ease; /* Added a transition for a smooth animation */
+}
+
+/* .lang-switcher button.active,
+.lang-switcher button:hover {
+    background-color: var(--text-light);
+    color: var(--accent-color);
+} */
+
+.lang-switcher button.active,
+.lang-switcher button:hover {
+    background-color: var(--text-light);
+    color: var(--accent-color);
+    border-radius: 50%; /* This is the key change to make the button a circle */
+    transform: scale(1.1); /* Optional: A subtle scale effect to make it pop */
+}
+
+/* Page Header (inside home.html) */
+.page-header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--highlight-color), var(--accent-color));
+    color: var(--text-light);
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
+}
+
+/* Cover Photo Section */
+ .cover-photo {
+    height: 81vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/images/1.jpg') fill/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    text-align: center;
+    position: relative;
+    animation: fade-in 1s ease-out;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+/*
+.cover-photo.hidden {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.cover-photo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    letter-spacing: 3px;
+} */
+/* Styling for the new Image Slideshow */
+
+
+/* .cover-photo {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+    animation: none; 
+    transition: none; 
+} */
+
+.cover-photo h2 {
+    /* Keep this title's styling but ensure it's on top of the images */
+    position: absolute;
+    z-index: 10;
+}
+
+.image-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill contain; /* Ensures images fill the space without distortion */
+    opacity: 0; /* By default, all images are hidden */
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+}
+
+.slider-image.active {
+    opacity: 1; /* The active image is visible */
+}
+
+
+/* Moving Disclaimer */
+.disclaimer-container {
+    background-color: var(--text-dark);
+    color: var(--highlight-color);
+    padding: 10px 0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: var(--box-shadow);
+    width: 95%;
+    max-width: 1200px;
+}
+
+.disclaimer-text {
+    white-space: nowrap;
+    animation: scroll-text 20s linear infinite;
+    font-weight: 600;
+    display: inline-block;
+}
+
+@keyframes scroll-text {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* General Fade-up Animation */
+.animate-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Main Layout */
+.page-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sidebar, .section {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+.sidebar:hover, .section:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Generic Box Styling with Image */
+.box-grid {
+    display: grid;
+    gap: 15px;
+}
+
+.box {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.box:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: var(--highlight-color);
+    color: var(--text-light);
+}
+
+.box.filled {
+    background-color: var(--highlight-color);
+    color: var(--text-light);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+.box.filled:hover {
+    background-color: var(--accent-color);
+}
+
+.box img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid var(--text-light);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Specific Sections */
+.upcoming-dates .box-grid,
+.regular-events .box-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.physical-programs .box-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.milestones ul {
+    list-style-type: none;
+    padding-left: 0;
+    animation: list-fade-in 1s ease-out 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes list-fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.milestones li {
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border-color);
+    color: #666;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.milestones li:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+.regular-events .event-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.regular-events h3 {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin: 0;
+    text-transform: none;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.social-media-links a {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: var(--accent-color);
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Contact Form - Restyled to match new footer */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.contact-form h2 {
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--text-light);
+    padding-bottom: 5px;
+}
+
+.contact-form .form-container {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #3a3a3a;
+    border-radius: 12px;
+}
+
+.contact-form form {
+    gap: 15px;
+}
+
+.contact-form .form-group label {
+    color: #ccc;
+}
+
+.contact-form .form-group input, .contact-form .form-group textarea {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.contact-form .form-group input:focus, .contact-form .form-group textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+}
+
+.contact-form .submit-btn {
+    background: linear-gradient(to right, #ff5722, #ff9800);
+    color: var(--text-light);
+}
+
+.contact-form .submit-btn:hover {
+    background: linear-gradient(to right, #e64a19, #f57c00);
+    transform: translateY(-2px);
+}
+
+/* Footer - New Detailed Style */
+.site-footer {
+    background-color: #2c2c2c;
+    color: #ccc;
+    padding: 50px 20px 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--text-light);
+    margin-bottom: 15px;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 10px;
+}
+
+.footer-section p, .footer-section a, .footer-section address {
+    color: #ccc;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
+}
+
+.subscribe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-image-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 3px solid var(--text-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.footer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.subscribe-btn:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px);
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.app-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.app-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app-button-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sadhguru-app-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.app-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app-btn {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+.app-btn:hover {
+    background-color: #555;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-nav { flex-direction: column; gap: 15px; }
+    .nav-links { gap: 15px; justify-content: center; }
+    .page-content-wrapper { grid-template-columns: 1fr; }
+    h1 { font-size: 2rem; }
+    .cover-photo h2 { font-size: 2.5rem; }
+    .sidebar, .section { padding: 15px; }
+    .box-grid { grid-template-columns: 1fr; }
+    .social-media-links a { font-size: 2rem; }
+    .footer-container { gap: 20px; }
+}
