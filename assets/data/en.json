@@ -1,84 +1,108 @@
 {
-    "meta_title": "Isha West Bengal",
-    "header_title": "ISHA WEST BENGAL",
-    "disclaimer_text": "THIS WEBSITE BELONGS TO YOG SO USE BRIGHT COLORS",
-    "nav_links": {
-        "home": "Home",
-        "about": "About",
-        "programs": "Programs",
-        "events": "Events",
-        "contact": "Contact"
+  "meta_title": "Isha West Bengal",
+  "nav_links": {
+    "home": "Home",
+    "about": "About",
+    "programs": "Programs",
+    "events": "Events",
+    "contact": "Contact"
+  },
+  "header_title": "Isha Foundation , Changing Life :)",
+  "disclaimer_text": " YOG SO USE BRIGHT COLORS",
+  "milestones_title": "  Year Isha Milestones",
+  "milestones": [
+    "Milestone 1: Successful Completion of Yogathon",
+    "Milestone 2: New Center Inauguration in Kolkata",
+    "Milestone 3: 5,000 New Volunteers Joined",
+    "Milestone 4: Online Sessions for a New Program",
+    "Milestone 5: Community Service Drive"
+  ],
+  "upcoming_dates_title": "Upcoming Dates",
+  "upcoming_dates": [
+    {
+      "date": "Aug 20-22",
+      "location": "Kolkata Session"
     },
-    "milestones_title": "Current Year Isha Milestones",
-    "milestones": [
-        "Milestone 1: Successful Completion of Yogathon",
-        "Milestone 2: New Center Inauguration in Kolkata",
-        "Milestone 3: 5,000 New Volunteers Joined",
-        "Milestone 4: Online Sessions for a New Program",
-        "Milestone 5: Community Service Drive"
-    ],
-    "upcoming_dates_title": "IEO Bangla Upcoming Dates",
-    "upcoming_dates": [
-        {
-            "date": "Aug 20-22",
-            "location": "Kolkata Session"
-        },
-        {
-            "date": "Sep 15-18",
-            "location": "Digha Retreat"
-        },
-        {
-            "date": "Oct 10-12",
-            "location": "Online Workshop"
-        }
-    ],
-    "physical_programs_title": "PHYSICAL PROGRAMS",
-    "physical_programs": [
-        "Program A",
-        "Program B",
-        "Program C",
-        "Program D",
-        "Program E",
-        "Program F"
-    ],
-    "regular_events_title": "YEARLY / NON - REGULAR EVENTS",
-    "regular_events": [
-        {
-            "name": "MSR",
-            "content": "Content"
-        },
-        {
-            "name": "DEVI DARSHAN",
-            "content": "Content"
-        },
-        {
-            "name": "SG DARSHAN",
-            "content": "Content"
-        }
-    ],
-    "social_media_title": "Connect With Us",
-    "contact_form_title": "CONTACT US",
-    "contact_form": {
-        "name_label": "Name",
-        "email_label": "Email",
-        "subject_label": "Subject",
-        "message_label": "Message",
-        "placeholder_name": "Name",
-        "placeholder_email": "Email",
-        "placeholder_subject": "Subject",
-        "placeholder_message": "Message",
-        "button": "Send Message"
+    {
+      "date": "Sep 15-18",
+      "location": "Digha Retreat"
     },
-    "footer": {
-        "subscribe_title": "Subscribe",
-        "subscribe_text": "Join 1.2 Million people from around the world, get wisdom articles delivered in the mailbox for free.",
-        "subscribe_button": "Subscribe Now",
-        "contact_title": "Contact Us",
-        "contact_address": "India<br>Isha Yoga Centre,<br>Velliangiri Foothills,<br>Ishana Vihar Post,<br>Coimbatore, Tamil Nadu - 641114",
-        "contact_phone": "+91 83000 83111, 04224283111, 04223538311",
-        "contact_email": "support.ishafoundation.org",
-        "contact_other_centers": "Other Centres",
-        "download_title": "Download Sadhguru App",
-        "copyright": "© 1999 - 2024 Isha Foundation. All Rights Reserved. | Terms & Conditions | Privacy Policy"
+    {
+      "date": "Oct 10-12",
+      "location": "Online Workshop"
     }
+  ],
+  "physical_programs_title": "Physical Programs",
+  "physical_programs": [
+    "Program A",
+    "Program B",
+    "Program C",
+    "Program D",
+    "Program E",
+    "Program F"
+  ],
+  "regular_events_title": "Yearly / Non - Regular Events",
+  "regular_events": [
+    {
+      "name": "MSR",
+      "content": "Content"
+    },
+    {
+      "name": "DEVI DARSHAN",
+      "content": "Content"
+    },
+    {
+      "name": "SG DARSHAN",
+      "content": "Content"
+    }
+  ],
+  "social_media_title": "Connect With Us",
+  "gallery_title": "Gallery of Archived Moments",
+  "archives": [
+    {
+      "src": "assets/images/gallery/1.jpg",
+      "alt": "Description of image 1"
+    },
+    {
+      "src": "assets/images/gallery/2.jpg",
+      "alt": "Description of image 2"
+    },
+    {
+      "src": "assets/images/gallery/3.jpg",
+      "alt": "Description of image 3"
+    },
+    {
+      "src": "assets/images/gallery/image4.jpg",
+      "alt": "Description of image 4"
+    }
+  ],
+  "contact_form_title": "CONTACT US",
+  "contact_form": {
+    "name_label": "Name",
+    "email_label": "Email",
+    "subject_label": "Subject",
+    "message_label": "Message",
+    "placeholder_name": "Name",
+    "placeholder_email": "Email",
+    "placeholder_subject": "Subject",
+    "placeholder_message": "Message",
+    "button": "Send Message"
+  },
+  "gmaps_title": "Our Location",
+  "gmaps_link": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.66444876935!2d88.43577717596048!3d22.553942033621455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276d4990089e5%3A0xc3f6d54238714d2e!2sSalt%20Lake%20Stadium!5e0!3m2!1sen!2sin!4v1717800000000!5m2!1sen!2sin\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+  "footer": {
+    "copyright": "© 2025 Isha Foundation. All Rights Reserved. | Terms & Conditions | Privacy Policy",
+    "subscribe_title": "Subscribe",
+    "subscribe_text": "Join 1.2 Million people from around the world, get wisdom articles delivered in the mailbox for free.",
+    "subscribe_button": "Subscribe Now",
+    "contact_title": "Contact Us",
+    "contact_address": "India<br>Isha Yoga Centre,<br>Velliangiri Foothills,<br>Ishana Vihar Post,<br>Coimbatore, Tamil Nadu - 641114",
+    "contact_phone": "+91 83000 83111, 04224283111, 04223538311",
+    "contact_email": "support.ishafoundation.org",
+    "contact_other_centers": "Other Centres",
+    "download_title": "Download Sadhguru App",
+    "app_ios": "iOS App",
+    "app_android": "Android App"
+  }
+  
 }

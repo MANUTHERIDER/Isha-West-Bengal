@@ -2,24 +2,106 @@
   "meta_title": "ईशा पश्चिम बंगाल",
   "nav_links": {
     "home": "होम",
-    "about": "हमारे बारे में",
+    "about": "के बारे में",
     "programs": "कार्यक्रम",
     "events": "आयोजन",
     "contact": "संपर्क"
   },
-  "home_page_content": "",
+  "header_title": "ईशा फाउंडेशन, जीवन बदल रहा है :)",
+  "disclaimer_text": "योग के लिए चमकीले रंगों का उपयोग करें",
+  "milestones_title": "इस साल के ईशा माइलस्टोन",
+  "milestones": [
+    "माइलस्टोन 1: योगाथॉन का सफल समापन",
+    "माइलस्टोन 2: कोलकाता में नए केंद्र का उद्घाटन",
+    "माइलस्टोन 3: 5,000 नए स्वयंसेवक शामिल हुए",
+    "माइलस्टोन 4: एक नए कार्यक्रम के लिए ऑनलाइन सत्र",
+    "माइलस्टोन 5: सामुदायिक सेवा अभियान"
+  ],
+  "upcoming_dates_title": "आगामी तिथियाँ",
+  "upcoming_dates": [
+    {
+      "date": "अगस्त 20-22",
+      "location": "कोलकाता सत्र"
+    },
+    {
+      "date": "सितंबर 15-18",
+      "location": "दीघा रिट्रीट"
+    },
+    {
+      "date": "अक्टूबर 10-12",
+      "location": "ऑनलाइन कार्यशाला"
+    }
+  ],
+  "physical_programs_title": "शारीरिक कार्यक्रम",
+  "physical_programs": [
+    "कार्यक्रम ए",
+    "कार्यक्रम बी",
+    "कार्यक्रम सी",
+    "कार्यक्रम डी",
+    "कार्यक्रम ई",
+    "कार्यक्रम एफ"
+  ],
+  "regular_events_title": "वार्षिक / गैर-नियमित आयोजन",
+  "regular_events": [
+    {
+      "name": "एमएसआर",
+      "content": "सामग्री"
+    },
+    {
+      "name": "देवी दर्शन",
+      "content": "सामग्री"
+    },
+    {
+      "name": "एसजी दर्शन",
+      "content": "सामग्री"
+    }
+  ],
+  "social_media_title": "हमारे साथ जुड़ें",
+  "gallery_title": "संग्रहीत पलों की गैलरी",
+  "archives": [
+    {
+      "src": "assets/images/gallery/image1.jpg",
+      "alt": "छवि 1 का विवरण"
+    },
+    {
+      "src": "assets/images/gallery/image2.jpg",
+      "alt": "छवि 2 का विवरण"
+    },
+    {
+      "src": "assets/images/gallery/image3.jpg",
+      "alt": "छवि 3 का विवरण"
+    },
+    {
+      "src": "assets/images/gallery/image4.jpg",
+      "alt": "छवि 4 का विवरण"
+    }
+  ],
+  "contact_form_title": "हमसे संपर्क करें",
+  "contact_form": {
+    "name_label": "नाम",
+    "email_label": "ईमेल",
+    "subject_label": "विषय",
+    "message_label": "संदेश",
+    "placeholder_name": "नाम",
+    "placeholder_email": "ईमेल",
+    "placeholder_subject": "विषय",
+    "placeholder_message": "संदेश",
+    "button": "संदेश भेजें"
+  },
+  "gmaps_title": "हमारा स्थान",
+  "gmaps_link": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.66444876935!2d88.43577717596048!3d22.553942033621455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276d4990089e5%3A0xc3f6d54238714d2e!2sSalt%20Lake%20Stadium!5e0!3m2!1sen!2sin!4v1717800000000!5m2!1sen!2sin\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
   "footer": {
-    "copyright": "© 2025 ईशा फाउंडेशन। सर्वाधिकार सुरक्षित।",
-    "subscribe_title": "अपडेट के लिए सदस्यता लें",
-    "subscribe_text": "घटनाओं और कार्यक्रमों के बारे में सूचित रहने के लिए हमारे न्यूज़लेटर से जुड़ें।",
+    "copyright": "© 2025 ईशा फाउंडेशन। सर्वाधिकार सुरक्षित। | नियम और शर्तें | गोपनीयता नीति",
+    "subscribe_title": "सदस्यता लें",
+    "subscribe_text": "दुनिया भर के 1.2 मिलियन लोगों से जुड़ें, अपने मेलबॉक्स में मुफ्त में ज्ञानवर्धक लेख प्राप्त करें।",
     "subscribe_button": "अभी सदस्यता लें",
     "contact_title": "हमसे संपर्क करें",
-    "contact_address": "ईशा योग केंद्र, वेल्लिंगिरी तलहटी, ईशाना विहार पोस्ट, कोयम्बटूर - 641114",
-    "contact_phone": "+91 83000 83000",
-    "contact_email": "support@ishafoundation.org",
-    "contact_other_centers": "अन्य केंद्र खोजें",
+    "contact_address": "भारत<br>ईशा योग केंद्र,<br>वेलियांगिरी तलहटी,<br>ईशाना विहार पोस्ट,<br>कोयंबटूर, तमिलनाडु - 641114",
+    "contact_phone": "+91 83000 83111, 04224283111, 04223538311",
+    "contact_email": "support.ishafoundation.org",
+    "contact_other_centers": "अन्य केंद्र",
     "download_title": "सद्गुरु ऐप डाउनलोड करें",
-    "app_ios": "ऐप स्टोर पर डाउनलोड करें",
-    "app_android": "गूगल प्ले पर प्राप्त करें"
+    "app_ios": "iOS ऐप",
+    "app_android": "एंड्रॉइड ऐप"
   }
 }

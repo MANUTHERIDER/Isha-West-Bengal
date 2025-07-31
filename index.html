@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en"> -->
+<html lang="en" data-lang="en">
+
+</html>
 
 <head>
     <meta charset="UTF-8">
@@ -12,21 +15,6 @@
 
 <body>
     <div id="page-container">
-        <!-- <header class="app-header">
-            <nav class="top-nav">
-                <ul class="nav-links">
-                    <li><a href="#about" class="active">Home</a></li>
-                    <li><a href="#milestones">About</a></li>
-                    <li><a href="#programs">Programs</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-
-                <div class="lang-switcher">
-                    <a href="#" class="lang-btn active">EN</a>
-                </div>
-            </nav>
-        </header> -->
         <div class="hero-section">
             <header class="app-header">
                 <nav class="top-nav">
@@ -38,11 +26,7 @@
                         <li><a href="/contact" data-link="contact">Contact</a></li>
                     </ul>
 
-                    <!-- <div class="lang-switcher">
-                        <button class="lang-btn" data-lang="en">EN</button>
-                        <button class="lang-btn" data-lang="bn">BN</button>
-                        <button class="lang-btn" data-lang="hi">HI</button>
-                    </div> -->
+
                     <div class="lang-switcher">
                         <button class="lang-btn active" data-lang="en">EN</button>
                         <button class="lang-btn" data-lang="bn">BN</button>
@@ -61,25 +45,14 @@
             </div>
         </div>
         <main class="main-container" id="app-content">
-            <!-- <div class="cover-photo">
-                <h2>Isha West Bengal</h2>
-            </div>
-             -->
-            <!-- <div class="cover-photo">
-                <div class="image-slider">
-                    <img src="assets/images/1.jpg" class="slider-image active" alt="Isha West Bengal scenery 1">
-                    <img src="assets/images/2.jpg" class="slider-image" alt="Isha West Bengal scenery 2">
-                    <img src="assets/images/3.jpg" class="slider-image" alt="Isha West Bengal scenery 3">
-                </div>
-                <h2>Isha West Bengal</h2>
-            </div>
-            <header class="page-header animate-fade-up">
+
+            <!-- <header class="page-header animate-fade-up">
                 <h1>ISHA WEST BENGAL</h1>
             </header> -->
 
-            <!-- <div class="disclaimer-container animate-fade-up">
+            <div class="disclaimer-container animate-fade-up">
                 <p class="disclaimer-text">THIS WEBSITE BELONGS TO YOG SO USE BRIGHT COLORS</p>
-            </div> -->
+            </div>
 
             <div class="page-content-wrapper">
                 <aside class="sidebar milestones animate-fade-up">
@@ -210,7 +183,21 @@
                     </form>
                 </div>
             </div>
-
+            <div class="container">
+                <div class="gallery-section animate-fade-up">
+                    <h2 id="gallery-title"></h2>
+                    <div class="carousel-container">
+                        <div id="gallery-carousel" class="carousel">
+                        </div>
+                        <button id="prev-btn" class="carousel-button prev-button">❮</button>
+                        <button id="next-btn" class="carousel-button next-button">❯</button>
+                    </div>
+                </div>
+            </div>
+            <div class="google-maps-section animate-fade-up">
+                <h2 id="gmaps-title"></h2>
+                <div id="gmaps-container" class="gmaps-container"></div>
+            </div>
         </main>
 
         <footer class="site-footer">

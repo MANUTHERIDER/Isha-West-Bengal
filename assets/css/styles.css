@@ -4,8 +4,10 @@
 :root {
     --primary-bg: #f5f5f5;
     --secondary-bg: #ffffff;
-    --accent-color: #ff5722; /* Vibrant Orange */
-    --highlight-color: #ff9800; /* Bright Yellow */
+    --accent-color: #ff5722;
+    /* Vibrant Orange */
+    --highlight-color: #ff9800;
+    /* Bright Yellow */
     --text-dark: #222;
     --text-light: #fff;
     --border-color: #ddd;
@@ -23,7 +25,8 @@ body {
     background-color: var(--primary-bg);
     color: var(--text-dark);
     line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scroll from animations */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll from animations */
 }
 
 /* App Header (contains the navbar) */
@@ -54,31 +57,35 @@ body {
 /* New Hero Section container to hold the header and image */
 .hero-section {
     position: relative;
-    height: 81vh; 
+    height: 81vh;
     overflow: hidden;
     margin-bottom: 15px;
 }
 
 /* App Header (now transparent and positioned over the image) */
 .app-header {
-    background-color: transparent; /* Makes the navbar fully transparent */
-    box-shadow: none; /* Removes the box shadow */
+    background-color: transparent;
+    /* Makes the navbar fully transparent */
+    box-shadow: none;
+    /* Removes the box shadow */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100; /* Ensures the navbar is always on top of the image */
+    z-index: 100;
+    /* Ensures the navbar is always on top of the image */
 }
 
 /* Navbar links and buttons will now have a subtle shadow for readability */
 .nav-links a,
 .lang-switcher button {
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* The cover photo now fills the entire hero section */
 .cover-photo {
-    height: 100%; /* Changed from 60vh to 100% to fill the parent container */
+    height: 100%;
+    /* Changed from 60vh to 100% to fill the parent container */
     width: 100%;
     display: flex;
     align-items: center;
@@ -95,7 +102,8 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Added text shadow for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Added text shadow for visibility */
 }
 
 .image-slider {
@@ -170,11 +178,13 @@ body {
 }
 
 .nav-links a {
-    color: var(--text-light); /* Links are white by default */
+    color: var(--text-light);
+    /* Links are white by default */
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: color 0.3s ease; /* Transition for a smooth color change */
+    transition: color 0.3s ease;
+    /* Transition for a smooth color change */
     padding: 5px 0;
     position: relative;
 }
@@ -187,7 +197,8 @@ body {
 
 /* We can remove the underline effect entirely with these rules */
 .nav-links a::after {
-    content: none; /* This removes the underline pseudo-element */
+    content: none;
+    /* This removes the underline pseudo-element */
 }
 
 
@@ -207,12 +218,15 @@ body {
     background: none;
     border: 2px solid var(--text-light);
     color: var(--text-light);
-    padding: 10px; /* Changed padding to make the buttons square */
+    padding: 10px;
+    /* Changed padding to make the buttons square */
     font-size: 0.9rem;
     font-weight: 600;
-    border-radius: 6px; /* A slight default roundness */
+    border-radius: 6px;
+    /* A slight default roundness */
     cursor: pointer;
-    transition: all 0.4s ease; /* Added a transition for a smooth animation */
+    transition: all 0.4s ease;
+    /* Added a transition for a smooth animation */
 }
 
 /* .lang-switcher button.active,
@@ -225,8 +239,10 @@ body {
 .lang-switcher button:hover {
     background-color: var(--text-light);
     color: var(--accent-color);
-    border-radius: 50%; /* This is the key change to make the button a circle */
-    transform: scale(1.1); /* Optional: A subtle scale effect to make it pop */
+    border-radius: 50%;
+    /* This is the key change to make the button a circle */
+    transform: scale(1.1);
+    /* Optional: A subtle scale effect to make it pop */
 }
 
 /* Page Header (inside home.html) */
@@ -248,15 +264,15 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
 }
 
 /* Cover Photo Section */
- .cover-photo {
+.cover-photo {
     height: 81vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/images/1.jpg') fill/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/1.jpg') fill/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,6 +284,7 @@ h1 {
     opacity: 1;
     transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
+
 /*
 .cover-photo.hidden {
     transform: translateY(20px);
@@ -316,13 +333,17 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: fill contain; /* Ensures images fill the space without distortion */
-    opacity: 0; /* By default, all images are hidden */
-    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+    object-fit: fill contain;
+    /* Ensures images fill the space without distortion */
+    opacity: 0;
+    /* By default, all images are hidden */
+    transition: opacity 1s ease-in-out;
+    /* Smooth fade transition */
 }
 
 .slider-image.active {
-    opacity: 1; /* The active image is visible */
+    opacity: 1;
+    /* The active image is visible */
 }
 
 
@@ -347,8 +368,13 @@ h1 {
 }
 
 @keyframes scroll-text {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 /* General Fade-up Animation */
@@ -357,6 +383,7 @@ h1 {
     transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
 .animate-fade-up.visible {
     opacity: 1;
     transform: translateY(0);
@@ -372,15 +399,18 @@ h1 {
     margin: 0 auto;
 }
 
-.sidebar, .section {
+.sidebar,
+.section {
     background-color: var(--secondary-bg);
     padding: 20px;
     border-radius: 12px;
     box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
 }
-.sidebar:hover, .section:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+
+.sidebar:hover,
+.section:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .main-content {
@@ -417,12 +447,12 @@ h2 {
     font-weight: 600;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .box:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     background-color: var(--highlight-color);
     color: var(--text-light);
 }
@@ -430,8 +460,9 @@ h2 {
 .box.filled {
     background-color: var(--highlight-color);
     color: var(--text-light);
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
+
 .box.filled:hover {
     background-color: var(--accent-color);
 }
@@ -443,7 +474,7 @@ h2 {
     border-radius: 50%;
     margin-bottom: 10px;
     border: 2px solid var(--text-light);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Specific Sections */
@@ -464,8 +495,15 @@ h2 {
 }
 
 @keyframes list-fade-in {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .milestones li {
@@ -558,13 +596,15 @@ h2 {
     color: #ccc;
 }
 
-.contact-form .form-group input, .contact-form .form-group textarea {
+.contact-form .form-group input,
+.contact-form .form-group textarea {
     background-color: #444;
     color: #fff;
     border: 1px solid #555;
 }
 
-.contact-form .form-group input:focus, .contact-form .form-group textarea:focus {
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
     border-color: var(--accent-color);
     box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
 }
@@ -606,10 +646,13 @@ h2 {
     padding-left: 10px;
 }
 
-.footer-section p, .footer-section a, .footer-section address {
+.footer-section p,
+.footer-section a,
+.footer-section address {
     color: #ccc;
     text-decoration: none;
 }
+
 .footer-section a:hover {
     color: var(--highlight-color);
     text-decoration: underline;
@@ -631,6 +674,7 @@ h2 {
     border: 3px solid var(--text-light);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 .footer-image {
     width: 100%;
     height: 100%;
@@ -648,6 +692,7 @@ h2 {
     margin-top: 15px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .subscribe-btn:hover {
     background-color: #e64a19;
     transform: translateY(-2px);
@@ -671,6 +716,7 @@ h2 {
     align-items: center;
     text-align: center;
 }
+
 .app-buttons {
     display: flex;
     flex-direction: column;
@@ -706,6 +752,7 @@ h2 {
     gap: 10px;
     transition: background-color 0.3s ease;
 }
+
 .app-btn:hover {
     background-color: #555;
 }
@@ -719,13 +766,185 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .top-nav { flex-direction: column; gap: 15px; }
-    .nav-links { gap: 15px; justify-content: center; }
-    .page-content-wrapper { grid-template-columns: 1fr; }
-    h1 { font-size: 2rem; }
-    .cover-photo h2 { font-size: 2.5rem; }
-    .sidebar, .section { padding: 15px; }
-    .box-grid { grid-template-columns: 1fr; }
-    .social-media-links a { font-size: 2rem; }
-    .footer-container { gap: 20px; }
+    .top-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .page-content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cover-photo h2 {
+        font-size: 2.5rem;
+    }
+
+    .sidebar,
+    .section {
+        padding: 15px;
+    }
+
+    .box-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-media-links a {
+        font-size: 2rem;
+    }
+
+    .footer-container {
+        gap: 20px;
+    }
+}
+
+/* --- Carousel Container and Grid --- */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust this value to control the max width of the carousel */
+    margin: 0 auto 30px; /* Center the carousel and add some bottom margin */
+    overflow: hidden;
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 100%;
+    flex-shrink: 0; /* Ensures the images don't shrink */
+    display: block; /* Removes any default spacing below the image */
+    height: auto; /* Maintains the aspect ratio of the image */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/* --- Navigation Buttons --- */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+    border-radius: 50%; /* Makes the buttons round */
+    transition: background-color 0.3s ease;
+    z-index: 10; /* Ensures buttons are on top of the images */
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* --- Optional: Add styling for the gallery title if it's not already styled --- */
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+} */
+
+.container {
+height: 100%;
+width: 100%;
+    border: #f57c00;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.gallery-section {
+    padding: 3rem 2rem;
+    background: none;
+    /* border: 2px solid var(--accent-color); */
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
 }

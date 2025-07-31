@@ -1,25 +1,107 @@
 {
-  "meta_title": "ইশা পশ্চিমবঙ্গ",
+  "meta_title": "ইশা পশ্চিম বাংলা",
   "nav_links": {
     "home": "হোম",
-    "about": "আমাদের সম্পর্কে",
-    "programs": "প্রোগ্রাম",
-    "events": "ইভেন্ট",
+    "about": "সম্পর্কে",
+    "programs": "কার্যক্রম",
+    "events": "ঘটনা",
     "contact": "যোগাযোগ"
   },
-  "home_page_content": "",
+  "header_title": "ইশা ফাউন্ডেশন, জীবন পরিবর্তন হচ্ছে :)",
+  "disclaimer_text": "যোগের জন্য উজ্জ্বল রং ব্যবহার করুন",
+  "milestones_title": "এই বছরের ইশা মাইলফলক",
+  "milestones": [
+    "মাইলফলক ১: যোগাথন সফলভাবে সম্পন্ন হয়েছে",
+    "মাইলফলক ২: কলকাতায় নতুন কেন্দ্র উদ্বোধন",
+    "মাইলফলক ৩: ৫,০০০ নতুন স্বেচ্ছাসেবক যোগদান করেছেন",
+    "মাইলফলক ৪: একটি নতুন প্রোগ্রামের জন্য অনলাইন সেশন",
+    "মাইলফলক ৫: সম্প্রদায় সেবা অভিযান"
+  ],
+  "upcoming_dates_title": "আসন্ন তারিখ",
+  "upcoming_dates": [
+    {
+      "date": "আগস্ট ২০-২২",
+      "location": "কলকাতা সেশন"
+    },
+    {
+      "date": "সেপ্টেম্বর ১৫-১৮",
+      "location": "দিঘা রিট্রিট"
+    },
+    {
+      "date": "অক্টোবর ১০-১২",
+      "location": "অনলাইন কর্মশালা"
+    }
+  ],
+  "physical_programs_title": "শারীরিক কার্যক্রম",
+  "physical_programs": [
+    "কার্যক্রম এ",
+    "কার্যক্রম বি",
+    "কার্যক্রম সি",
+    "কার্যক্রম ডি",
+    "কার্যক্রম ই",
+    "কার্যক্রম এফ"
+  ],
+  "regular_events_title": "বার্ষিক / অনিয়মিত ঘটনা",
+  "regular_events": [
+    {
+      "name": "এমএসআর",
+      "content": "বিষয়বস্তু"
+    },
+    {
+      "name": "দেবী দর্শন",
+      "content": "বিষয়বস্তু"
+    },
+    {
+      "name": "এসজি দর্শন",
+      "content": "বিষয়বস্তু"
+    }
+  ],
+  "social_media_title": "আমাদের সাথে যুক্ত হন",
+  "gallery_title": "সংরক্ষিত মুহূর্তের গ্যালারি",
+  "archives": [
+    {
+      "src": "assets/images/gallery/image1.jpg",
+      "alt": "ছবি ১ এর বর্ণনা"
+    },
+    {
+      "src": "assets/images/gallery/image2.jpg",
+      "alt": "ছবি ২ এর বর্ণনা"
+    },
+    {
+      "src": "assets/images/gallery/image3.jpg",
+      "alt": "ছবি ৩ এর বর্ণনা"
+    },
+    {
+      "src": "assets/images/gallery/image4.jpg",
+      "alt": "ছবি ৪ এর বর্ণনা"
+    }
+  ],
+  "contact_form_title": "আমাদের সাথে যোগাযোগ করুন",
+  "contact_form": {
+    "name_label": "নাম",
+    "email_label": "ইমেল",
+    "subject_label": "বিষয়",
+    "message_label": "বার্তা",
+    "placeholder_name": "নাম",
+    "placeholder_email": "ইমেল",
+    "placeholder_subject": "বিষয়",
+    "placeholder_message": "বার্তা",
+    "button": "বার্তা পাঠান"
+  },
+  "gmaps_title": "আমাদের অবস্থান",
+  "gmaps_link": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.66444876935!2d88.43577717596048!3d22.553942033621455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276d4990089e5%3A0xc3f6d54238714d2e!2sSalt%20Lake%20Stadium!5e0!3m2!1sen!2sin!4v1717800000000!5m2!1sen!2sin\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
   "footer": {
-    "copyright": "© ২০২৫ ইশা ফাউন্ডেশন। সর্বস্বত্ব সংরক্ষিত।",
-    "subscribe_title": "আপডেটের জন্য সাবস্ক্রাইব করুন",
-    "subscribe_text": "ইভেন্ট এবং প্রোগ্রাম সম্পর্কে অবগত থাকতে আমাদের নিউজলেটারে যোগ দিন।",
+    "copyright": "© 2025 ইশা ফাউন্ডেশন। সর্বস্বত্ব সংরক্ষিত। | শর্তাবলী | গোপনীয়তা নীতি",
+    "subscribe_title": "সাবস্ক্রাইব করুন",
+    "subscribe_text": "বিশ্বের ১.২ মিলিয়ন মানুষের সাথে যোগ দিন, বিনামুল্যে জ্ঞানগর্ভ নিবন্ধগুলি আপনার মেলবক্সে পান।",
     "subscribe_button": "এখনই সাবস্ক্রাইব করুন",
-    "contact_title": "যোগাযোগ করুন",
-    "contact_address": "ইশা যোগ কেন্দ্র, ভেল্লিয়াঙ্গিরি পাদদেশ, ইশানা বিহার পোস্ট, কোয়েম্বাটোর - ৬৪১১১৪",
-    "contact_phone": "+৯১ ৮৩০০০ ৮৩০০০",
-    "contact_email": "support@ishafoundation.org",
-    "contact_other_centers": "অন্যান্য কেন্দ্র খুঁজুন",
-    "download_title": "সদগুরু অ্যাপ ডাউনলোড করুন",
-    "app_ios": "অ্যাপ স্টোরে ডাউনলোড করুন",
-    "app_android": "গুগল প্লে থেকে ডাউনলোড করুন"
+    "contact_title": "আমাদের সাথে যোগাযোগ করুন",
+    "contact_address": "ভারত<br>ইশা যোগ কেন্দ্র,<br>ভেল্লিয়াঙ্গিরি পাদদেশ,<br>ইশানা বিহার পোস্ট,<br>কোয়েম্বাটোর, তামিল নাড়ু - ৬৪১১১৪",
+    "contact_phone": "+91 83000 83111, 04224283111, 04223538311",
+    "contact_email": "support.ishafoundation.org",
+    "contact_other_centers": "অন্যান্য কেন্দ্র",
+    "download_title": "সদ্গুরু অ্যাপ ডাউনলোড করুন",
+    "app_ios": "iOS অ্যাপ",
+    "app_android": "অ্যান্ড্রয়েড অ্যাপ"
   }
 }
