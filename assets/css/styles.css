@@ -20,6 +20,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--primary-bg);
@@ -50,6 +54,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 100;
+     transition: transform 0.5s ease-in-out
     /* Ensures the navbar is always on top of the image */
 }
 
@@ -191,19 +196,22 @@ body {
     position: relative;
     overflow: hidden;
     width: 95%;
-    height: 12%;
-    max-height:250px;
-    /* max-width: 1200px; */
+    height: auto;
+    /* max-height: 160px; */
+    max-width: 1800px;
     margin: 20px auto;
+    
 }
 
 .page-header img {
-    /* position: relative; */
+    position: static;
     width: 100%;
-    height: 90%;
-    /* bottom: 15px; */
+    height: auto;
+     max-height: 250px;
+    bottom: unset;
     border-radius: 12px;
-    /* overflow: hidden; */
+    object-fit: cover;
+    overflow: hidden;
 }
 
 h1 {
@@ -321,7 +329,7 @@ h1 {
 .sidebar,
 .section {
     background-color: var(--secondary-bg);
-    padding: 20px;
+    padding: 30px;
     border-radius: 12px;
     box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
@@ -382,9 +390,10 @@ h2 {
 .box-content {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    /* right: 3px; */
+    padding: 3px;
     width: 80%;
-    text-align: right;
+    text-align: left;
     color: var(--text-light);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
     z-index: 2;
@@ -412,17 +421,7 @@ h2 {
 
 }
 
-.box-content {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 80%;
-    text-align: right;
-    color: var(--text-light);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    z-index: 2;
 
-}
 
 .box-content h3 {
     font-size: 1.2rem;
@@ -615,11 +614,12 @@ h2 {
 .contact-form,
 .google-maps-section {
     flex: 1;
+    flex-shrink: inherit;
     min-width: 250px;
     background-color: var(--secondary-bg);
     /* padding: 9px; */
     border-radius: 12px;
-    /* box-shadow: var(--box-shadow); */
+    box-shadow: var(--box-shadow);
 }
 
 /* Adjustments for the form and map headings */
@@ -766,7 +766,10 @@ h2 {
     /* margin-top: 40px; */
     font-size: 0.9rem;
     line-height: 1.8;
+    border-radius: 0;
 }
+
+
 
 .footer-container {
     display: grid;
@@ -820,6 +823,83 @@ h2 {
     object-fit: cover;
 }
 
+.footer-section.contact-section {
+    /* Basic layout and spacing for the contact section */
+    flex-basis: 22%;
+    /* Adjust as needed for your desired column layout in the footer */
+    margin-bottom: 20px;
+    /* Space below the section */
+    min-width: 200px;
+    /* Ensures it doesn't get too narrow on smaller screens */
+    text-align: left;
+    /* Align text to the left within this section */
+    /* margin-left: 35px; */
+    /* padding: 15px; */
+}
+
+.footer-section.contact-section h3 {
+    /* Styles for the "Contact Us" heading within this section */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--highlight-color);
+    /* Uses the highlight color for headings */
+    margin-bottom: 15px;
+    border-left: 3px solid var(--accent-color);
+    /* Adds a decorative left border */
+    padding-left: 10px;
+    /* Spacing for the left border */
+        width: fit-content;
+        margin-left: 1rem;
+}
+
+.footer-section.contact-section address {
+    /* Styles for the address text */
+    color: rgba(255, 255, 255, 0.7);
+    /* Lighter text color for readability on dark background */
+    font-style: normal;
+    /* Resets default address italic style */
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.footer-section.contact-section .contact-info {
+    /* Container for phone and email lines */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Space between icon and text */
+    margin-bottom: 10px;
+}
+
+.footer-section.contact-section .contact-info i {
+    /* Styles for the phone and envelope icons */
+    color: var(--accent-color);
+    /* Uses the accent color for icons */
+    font-size: 1.2rem;
+}
+
+.footer-section.contact-section .contact-info span,
+.footer-section.contact-section .contact-info a {
+    /* Styles for the phone number and email link text */
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section.contact-section .contact-info a:hover {
+    color: var(--highlight-color);
+    /* Hover effect for email link */
+}
+
+.footer-section.contact-section .other-centers {
+    /* Styles for the "Other Centres" paragraph */
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 15px;
+}
+
+/* Responsive adjustments for smaller screens */
+
+
 .subscribe-btn {
     padding: 10px 20px;
     border: none;
@@ -866,6 +946,10 @@ h2 {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.app-button-group img {
+    border-radius: 20px;
 }
 
 .sadhguru-app-icon {
@@ -982,7 +1066,9 @@ h2 {
     height: 100%;
     width: 95%;
     border: #f57c00;
-    margin: 40px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
     margin-bottom: 5px;
     align-self: center;
     align-items: center;
@@ -1006,7 +1092,7 @@ h2 {
 
 .gallery-item img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     /* Ensures image fills the container without distortion */
     display: block;
@@ -1047,6 +1133,8 @@ h2 {
 .gallery-scroller-inner {
     display: flex;
     animation: marquee-to-and-fro 15s linear infinite;
+    /* animation: marquee 20s linear infinite; */
+
     /* Adjust duration for speed */
 }
 
@@ -1054,10 +1142,14 @@ h2 {
     animation-play-state: paused;
 }
 
-
+/* .gallery-item {
+        width: 100%;
+        height: auto;
+    } */
 .gallery-item {
     display: inline-block;
-    width: 250px;
+    width: 60%;
+    height: 50%;
     /* Adjust item width as needed */
     margin: 0 10px;
     flex-shrink: 0;
@@ -1074,7 +1166,7 @@ h2 {
 
 .gallery-item img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     display: block;
 }
@@ -1267,6 +1359,57 @@ h2 {
     transform: translateY(0);
 }
 
+/* Add this new CSS to the bottom of your styles.css file */
+
+.compact-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    max-width: 300px;
+    padding: 15px;
+}
+
+.compact-contact-form input,
+.compact-contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-bg);
+    color: var(--text-dark);
+}
+
+.compact-contact-form input:focus,
+.compact-contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.compact-contact-form .submit-btn {
+    padding: 12px;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.compact-contact-form .submit-btn:hover {
+    background-color: #e04e1b;
+}
+
+#footer-form-message {
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+.galleryCustom{
+    padding: 15px;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .contact-container {
@@ -1284,10 +1427,7 @@ h2 {
         flex-direction: column;
     }
 
-    .gallery-item {
-        width: 300px;
-        height: 180px;
-    }
+    
 
     .top-nav {
         flex-direction: column;
@@ -1311,10 +1451,10 @@ h2 {
         font-size: 2.5rem;
     }
 
-    .sidebar,
+    /* .sidebar,
     .section {
-        padding: 15px;
-    }
+        padding:0;
+    } */
 
     .box-grid {
         grid-template-columns: 1fr;
@@ -1327,5 +1467,28 @@ h2 {
     .footer-container {
         gap: 20px;
     }
+
+    .footer-section.contact-section {
+        text-align: center;
+        /* Center align on small screens */
+        min-width: 100%;
+        margin-left: 30px
+        /* Take full width */
+    }
+
+    .footer-section.contact-section .contact-info {
+        justify-content: center;
+        /* Center icons and text on small screens */
+    }
+
 }
 
+@media (max-width: 534px) {
+    .compact-contact-form {
+        margin-left: 1.7rem;
+    }
+    .footer-section.contact-section h3 {
+                margin-left: 2.5rem;
+
+    }
+}

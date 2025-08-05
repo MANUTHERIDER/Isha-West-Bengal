@@ -20,18 +20,18 @@
                 <nav class="top-nav">
                     <!-- <a href="#" alt ='sadguru_logo' class="brand-logo"></a> -->
                     <ul class="nav-links">
-                        <li><a href="/" data-link="home">Home</a></li>
-                        <li><a href="/about" data-link="about">About</a></li>
-                        <li><a href="/programs" data-link="programs">Programs</a></li>
-                        <li><a href="/events" data-link="events">Events</a></li>
-                        <li><a href="/contact" data-link="contact">Contact</a></li>
+                        <li class="animate-fade-up"><a href="#app-content" data-link="home">Home</a></li>
+                        <!-- <li><a href="/about" data-link="about">About</a></li> -->
+                        <li class="animate-fade-up"><a href="#Events" data-link="programs">Programs</a></li>
+                        <li class="animate-fade-up"><a href="#Sangralah" data-link="gallery">Gallery</a></li>
+                        <li class="animate-fade-up"><a href="#Sampark" data-link="contact">Contact Us</a></li>
                     </ul>
 
 
                     <div class="lang-switcher">
                         <button class="lang-btn active" data-lang="en">EN</button>
-                        <button class="lang-btn" data-lang="bn">BN</button>
-                        <button class="lang-btn" data-lang="hi">HI</button>
+                        <!-- <button class="lang-btn" data-lang="bn">BN</button>
+                        <button class="lang-btn" data-lang="hi">HI</button> -->
                     </div>
                 </nav>
             </header>
@@ -70,7 +70,7 @@
                     </ul>
                 </aside>
 
-                <section class="main-content">
+                <section class="main-content" id="Events">
                     <div class="section upcoming-dates animate-fade-up">
                         <h2 id="programs">Bangla Programs</h2>
                         <div class="box-grid">
@@ -148,7 +148,7 @@
                         </div>
                     </div>
 
-                    <div class="section regular-events animate-fade-up">
+                    <!-- <div class="section regular-events animate-fade-up">
                         <h2 id="events">YEARLY / NON - REGULAR EVENTS</h2>
                         <div class="box-grid">
                             <div class="event-item">
@@ -156,7 +156,7 @@
                                 <div class="box filled">
                                     <img src="assets/images/event-icon-4.png" alt="Event Icon">
                                     <div class="box-content">
-                                        <!-- <h3>Oct 10-12</h3> -->
+                                        <h3>Oct 10-12</h3>
                                         <p>Program A</p>
                                     </div>
                                 </div>
@@ -166,7 +166,7 @@
                                 <div class="box filled">
                                     <img src="assets/images/event-icon-4.png" alt="Event Icon">
                                     <div class="box-content">
-                                        <!-- <h3>Oct 10-12</h3> -->
+                                        <h3>Oct 10-12</h3>
                                         <p>Program A</p>
                                     </div>
                                 </div>
@@ -176,13 +176,13 @@
                                 <div class="box filled">
                                     <img src="assets/images/event-icon-4.png" alt="Event Icon">
                                     <div class="box-content">
-                                        <!-- <h3>Oct 10-12</h3> -->
+                                        <h3>Oct 10-12</h3>
                                         <p>Program A</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- <div class="section social-media animate-fade-up">
                         <h2>Connect With Us</h2>
@@ -196,12 +196,12 @@
                     </div> -->
                 </section>
             </div>
-            <div class="container">
+            <!-- <div class="container">
                 <div class="section contact-container animate-fade-up" id="contact">
                     <h2>CONTACT US</h2>
                     <div class="contact-form-wrapper">
                         <div class="contact-form">
-                            <!-- <h2>CONTACT US</h2> -->
+                            <h2>CONTACT US</h2>
                             <div class="form-container">
                                 <form id="contact-form">
                                     <div class="form-group">
@@ -225,26 +225,18 @@
                                 </form>
                             </div>
                         </div>
-                        <!-- <div class="google-maps-section">
-                            <h2 id="gmaps-title">OUR LOCATION</h2>
-                        <div id="gmaps-container" class="gmaps-container">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15730.71880456184!2d76.77259068069532!3d10.99958153925767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86812833a6813%3A0x3f3d79075e7a9b0e!2sIsha%20Yoga%20Center!5e0!3m2!1sen!2sin!4v1689264024213!5m2!1sen!2sin"
-                                allowfullscreen="" loading="lazy"></iframe>
-                        </div> -->
                     </div>
 
                 </div>
-            </div>
+            </div> -->
     </div>
 
-    <div class="section container">
-        <div class="container">
-            <div class="gallery-section animate-fade-up">
-                <h2 id="gallery-title">GALLERY OF ARCHIVED MOMENTS</h2>
-                <div id="gallery-scroller" class="gallery-scroller">
-                </div>
+    <div class="section container galleryCustom" id="Sangralah">
+        <div class="gallery-section animate-fade-up">
+            <h2 id="gallery-title">GALLERY OF ARCHIVED MOMENTS</h2>
+            <div id="gallery-scroller" class="gallery-scroller">
             </div>
+
         </div>
 
         <div id="image-modal" class="image-modal">
@@ -260,21 +252,21 @@
         </div>
 
     </div>
-    <div class="section google-maps-section animate-fade-up">
-        <!-- <h2 id="gmaps-title">OUR LOCATION</h2> -->
+    <!-- <div class="section container google-maps-section animate-fade-up">
+        <h2 id="gmaps-title">OUR LOCATION</h2>
         <div id="gmaps-container" class="gmaps-container">
             <iframe src="https://maps.app.goo.gl/AJKppXUp6ymndw8B9" allowfullscreen="" loading="lazy"></iframe>
         </div>
-    </div>
+    </div> -->
 
     </main>
 
-    <footer class="section site-footer">
+    <footer class="section site-footer" id="Sampark">
         <div class="footer-container">
             <div class="footer-section subscribe-section">
                 <h3>Subscribe</h3>
                 <div class="footer-image-container">
-                    <img src="assets/images/subscribe-image.png" alt="Sadhguru" class="footer-image">
+                    <img src="assets/images/footer-round-img.png" alt="Sadhguru" class="footer-image">
                 </div>
                 <p>Join 1.2 Million people from around the world, get wisdom articles delivered in the mailbox for
                     free.</p>
@@ -284,38 +276,54 @@
 
             <div class="footer-section contact-section">
                 <h3>Contact Us</h3>
-                <address>
+                <form id="footer-contact-form" class="compact-contact-form">
+                    <input type="text" id="footer-name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="footer-email" name="email" placeholder="Your Email" required>
+                    <input type="number" id="footer-cnumber" name="number" pattern="[0-9]{10}" maxlength="15"
+                        placeholder="Your Mobile/Landline number">
+                    <textarea id="footer-message" name="message" rows="3" placeholder="Your Message"
+                        required></textarea>
+                    <button type="submit" class="submit-btn">Send</button>
+                    <div id="form-message" class="form-message"></div>
+                </form>
+                <!-- <address>
                     India<br>Isha Yoga Centre,<br>Velliangiri Foothills,<br>Ishana Vihar Post,<br>Coimbatore, Tamil
                     Nadu - 641114
-                </address>
-                <div class="contact-info">
+                </address> -->
+                <!-- <div class="contact-info">
                     <i class="fas fa-phone"></i>
                     <span>+91 83000 83111, 04224283111, 04223538311</span>
-                </div>
-                <div class="contact-info">
+                </div> -->
+                <!-- <div class="contact-info">
                     <i class="fas fa-envelope"></i>
                     <a href="mailto:support.ishafoundation.org">support.ishafoundation.org</a>
-                </div>
-                <p class="other-centers">Other Centres</p>
+                </div> -->
+                <!-- <p class="other-centers">Other Centres</p> -->
             </div>
             <div class="footer-section app-section">
                 <h3>Download Sadhguru App</h3>
                 <div class="app-buttons">
                     <div class="app-button-group">
-                        <img src="assets/images/sadhguru-app.png" alt="Sadhguru App" class="sadhguru-app-icon">
+                        <!-- <img src="assets/images/sadhguru-app.png" alt="Sadhguru App" class="sadhguru-app-icon"> -->
                         <div class="app-links">
-                            <a href="#" class="app-btn"><i class="fab fa-apple"></i> iOS App</a>
-                            <a href="#" class="app-btn"><i class="fab fa-google-play"></i> Android App</a>
+                            <a href="https://l1nk.dev/Tq7tD" target="_blank" class="app-btn"><i
+                                    class="fab fa-apple"></i> iOS App</a>
+                            <a href="https://acesse.one/FkTwB" target="_blank" class="app-btn"><i
+                                    class="fab fa-google-play"></i> Android App</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="social-media-links">
-                    <a href="https://business.facebook.com/latest/inbox/all/?nav_ref=manage_page_ap_plus_inbox_message_button&asset_id=511523958709333" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/sadhgurubangla" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook"></i></a>
                     <!-- <a href="" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
-                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="https://chat.whatsapp.com/GyUUDjkMSmHCyhr2huYXZy " target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/sadhguru.bangla?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@sadhgurubangla?si=QI-4f0VvVIopvi-m" target="_blank"
+                        aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://chat.whatsapp.com/GyUUDjkMSmHCyhr2huYXZy " target="_blank" aria-label="WhatsApp"><i
+                            class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
