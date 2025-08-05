@@ -20,14 +20,17 @@
   "upcoming_dates_title": "Bangla Programs",
   "upcoming_dates": [
     {
+      "src":"assets/images/event-icon-1.png",
       "date": "Aug 20-22",
       "location": "online/In-Person"
     },
     {
+      "src":"assets/images/event-icon2.png",
       "date": "Sep 15-18",
       "location": "Digha Retreat"
     },
     {
+      "src":"assets/images/event-icon-3.png",
       "date": "Oct 10-12",
       "location": "Online Workshop"
     }

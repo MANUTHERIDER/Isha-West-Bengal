@@ -673,9 +673,9 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             console.warn("Element with ID 'gallery-scroller' not found.");
         }
-        
+
         if (modalGalleryContainer) {
-             modalGalleryContainer.innerHTML = images.map(image => `
+            modalGalleryContainer.innerHTML = images.map(image => `
                 <img src="${image.src}" alt="${image.alt}" class="modal-image">
             `).join('');
         } else {
@@ -756,31 +756,39 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTextContent('#programs', translations.upcoming_dates_title);
         updateInnerHTML('.upcoming-dates .box-grid', translations.upcoming_dates.map(event => `
             <div class="box filled">
-                <img src="assets/images/event-icon-1.png" alt="Event Icon">
-                <h3>${event.date}</h3>
-                <p>${event.location}</p>
-            </div>
+    <img src="${event.src}" alt="Event Icon">
+    <div class="box-content">
+        <p>${event.location}</p>
+        <h3>${event.date}</h3>
+    </div>
+</div>
         `).join(''));
 
         // Physical Programs
         updateTextContent('.physical-programs h2', translations.physical_programs_title);
         updateInnerHTML('.physical-programs .box-grid', translations.physical_programs.map(program => `
-            <div class="box">
-                <img src="assets/images/program-icon-a.png" alt="Program Icon">
-                ${program}
-            </div>
+             <div class="box filled">
+    <img src="${program?.src}" alt="Event Icon">
+    <div class="box-content">
+        <p>${program.location}</p>
+        <h3>${program.date}</h3>
+    </div>
+</div>
         `).join(''));
 
         // Regular Events
         updateTextContent('#events', translations.regular_events_title);
         updateInnerHTML('.regular-events .box-grid', translations.regular_events.map(event => `
-            <div class="event-item">
-                <h3>${event.name}</h3>
-                <div class="box">
-                    <img src="assets/images/event-icon-4.png" alt="Event Icon">
-                    ${event.content}
-                </div>
-            </div>
+        <div class="event-item">
+    <h3>${event.name}</h3>
+    <div class="box">
+        <img src="${event?.src}" alt="Event Icon">
+        <div class="box-content">
+            <p>${event.location}</p>
+            <h3>${event.date}</h3>
+        </div>
+    </div>
+</div>
         `).join(''));
 
         // Gallery
@@ -877,7 +885,7 @@ document.addEventListener('DOMContentLoaded', () => {
             showModalImage(currentModalImageIndex);
         });
     }
-    
+
     window.onclick = function (event) {
         if (event.target === imageModal) {
             if (imageModal) {
