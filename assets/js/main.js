@@ -5,13 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const defaultLang = 'en';
 
     // ---- Carousel Variables and Functions ----
+
     const galleryScroller = document.getElementById('gallery-scroller');
     const imageModal = document.getElementById('image-modal');
     const modalGalleryContainer = document.getElementById('modal-gallery-container');
     const modalCloseBtn = document.querySelector('.modal-close-btn');
     const modalPrevBtn = document.querySelector('.modal-prev-btn');
     const modalNextBtn = document.querySelector('.modal-next-btn');
+    // START of the new code for the automatic image slider
+    const sliderImages = document.querySelectorAll('.image-slider .slider-image');
+    let currentImageIndex = 0;
 
+
+    // END of the new code for the automatic image slider
     let currentModalImageIndex = 0;
     let galleryImages = []; // Array to store image data from JSON
 
@@ -44,7 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
             console.warn("Element with ID 'modal-gallery-container' not found.");
         }
     };
+    const nextImage = () => {
+        // Remove 'active' class from the current image
+        sliderImages[currentImageIndex].classList.remove('active');
 
+        // Increment the index, and wrap around if at the end
+        currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
+
+        // Add 'active' class to the next image
+        sliderImages[currentImageIndex].classList.add('active');
+    };
+
+    // Set an interval to change the image every 5 seconds (5000 milliseconds)
+    setInterval(nextImage, 5000);
     // Function to show a specific image in the modal
     const showModalImage = (index) => {
         const modalImages = document.querySelectorAll('.modal-image');

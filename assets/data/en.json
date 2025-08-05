@@ -27,7 +27,7 @@
     },
     {
       "redirectUrl":"",
-      "src": "assets/images/Bangla_Programs-1.png",
+      "src": "assets/images/peace.png",
       "date": "Aug 20-22",
       "location": "online/In-Person"
     }
@@ -37,6 +37,12 @@
     {
       "redirectUrl":"",
       "src": "assets/images/Physical_Programs-1.png",
+      "date": "Aug 20-22",
+      "location": "online/In-Person"
+    },
+     {
+      "redirectUrl":"",
+      "src": "assets/images/inner-engineering.png",
       "date": "Aug 20-22",
       "location": "online/In-Person"
     }
