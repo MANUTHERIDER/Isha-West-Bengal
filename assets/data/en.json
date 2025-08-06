@@ -9,42 +9,38 @@
   },
   "header_title": "Isha West Bengal",
   "disclaimer_text": "This page is just for the upcoming isha programs and events in West Bengal. This does not represent any official website of Isha Foundation.",
-  "milestones_title": "Year Isha Milestones",
+  "milestones_title": "Isha Milestones",
   "milestones": [
-    "> Conscious Planet - Save Soil: Conscious Planet is a global movement that has reached 4.1 billion+ people.",
-    ">Isha Vidhya: Provides quality education to 9,700+ rural students, with 48% being girls.",
-    ">Community Health: Over 5 million patients treated through mobile clinics, rural clinics, and free camps.",
-    ">Save Soil Farmers’ Movement: Supports 10,000+ farmers in 580+ villages across 40,000+ acres.",
-    ">Cauvery Calling: Over 120 million trees planted, boosting farmer incomes by up to 800%."
+    "><b>Conscious Planet - Save Soil:</b> Conscious Planet is a global movement that has reached 4.1 billion+ people.",
+    "><b>Isha Vidhya:</b> Provides quality education to 9,700+ rural students, with 48% being girls.",
+    "><b>Community Health:</b> Over 5 million patients treated through mobile clinics, rural clinics, and free camps.",
+    "><b>Save Soil Farmers' Movement:</b> Supports 10,000+ farmers in 580+ villages across 40,000+ acres.",
+    "><b>Cauvery Calling:</b> Over 120 million trees planted, boosting farmer incomes by up to 800%."
   ],
   "upcoming_dates_title": "Bangla Programs",
   "upcoming_dates": [
+   
     {
-      "redirectUrl":"",
-      "src": "assets/images/Bangla_Programs-1.png",
-      "date": "Aug 20-22",
-      "location": "online/In-Person"
+      "redirectUrl":"https://chat.whatsapp.com/GyUUDjkMSmHCyhr2huYXZy?mode=ac_t",
+      "src": "assets/images/peace.png",
+      "date": "<b>September 13-14</b>",
+      "location": "<b>Online</b>"
     },
     {
-      "redirectUrl":"",
+      "redirectUrl":"https://chat.whatsapp.com/GyUUDjkMSmHCyhr2huYXZy?mode=ac_t",
       "src": "assets/images/peace.png",
-      "date": "Aug 20-22",
-      "location": "online/In-Person"
+      "date": "<b>December 20-21</b>",
+      "location": "<b>Online</b>"
     }
   ],
-  "physical_programs_title": "Physical Programs",
+  "physical_programs_title": "IEO/OTHER PROGRAMS",
   "physical_programs": [
     {
-      "redirectUrl":"",
+      "redirectUrl":"https://online.sadhguru.org/event-register?event=inner-engineering-4-days-kolkata-south-28-aug-2025-14239",
       "src": "assets/images/Physical_Programs-1.png",
-      "date": "Aug 20-22",
-      "location": "online/In-Person"
-    },
-     {
-      "redirectUrl":"",
-      "src": "assets/images/inner-engineering.png",
-      "date": "Aug 20-22",
-      "location": "online/In-Person"
+      "date": "<b>August 28-31</b>",
+      "location": "<b>Online</b>",
+      "details":"4 Day Inner Engineering (English)"
     }
   ],
   "regular_events_title": "Yearly / Non - Regular Events",

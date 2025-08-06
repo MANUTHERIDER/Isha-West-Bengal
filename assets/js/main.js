@@ -152,6 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="box-content">
         <p>${program.location}</p>
         <h3>${program.date}</h3>
+        <h3>${program.details}</h3>
     </div>
 </div>
         `).join(''));
