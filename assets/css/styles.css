@@ -54,8 +54,8 @@ body {
     left: 0;
     width: 100%;
     z-index: 100;
-     transition: transform 0.5s ease-in-out
-    /* Ensures the navbar is always on top of the image */
+    transition: transform 0.5s ease-in-out
+        /* Ensures the navbar is always on top of the image */
 }
 
 /* Navbar links and buttons will now have a subtle shadow for readability */
@@ -200,36 +200,43 @@ body {
     /* max-height: 160px; */
     max-width: 1800px;
     margin: 20px auto;
-    
+
 }
 
 .page-header img {
     position: static;
     /* width: 100%;
     height: auto; */
-     max-height: 250px;
+    max-height: 250px;
     bottom: unset;
     border-radius: 12px;
     object-fit: cover;
     overflow: hidden;
+
 }
+
 .full-image-container {
-    max-height: 160px; /* Set your desired maximum height here */
+    max-height: 160px;
+    /* Set your desired maximum height here */
     width: 100%;
-    overflow: hidden; /* Hides any part of the image that might exceed the container, though object-fit should prevent this */
-    display: flex; /* Helps in centering the image */
+    overflow: hidden;
+    /* Hides any part of the image that might exceed the container, though object-fit should prevent this */
+    display: flex;
+    /* Helps in centering the image */
     align-items: center;
     justify-content: center;
 }
+
 .full-image-container a img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* This is the key property */
-    object-position: center; /* Centers the image within the container */
+    object-fit: contain;
+    /* This is the key property */
+    object-position: center;
+    /* Centers the image within the container */
 }
-.full-image-container a{
-     
-}
+
+.full-image-container a {}
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -865,8 +872,8 @@ h2 {
     /* Adds a decorative left border */
     padding-left: 10px;
     /* Spacing for the left border */
-        width: fit-content;
-        margin-left: 1rem;
+    width: fit-content;
+    margin-left: 1rem;
 }
 
 .footer-section.contact-section address {
@@ -1082,6 +1089,7 @@ h2 {
 .container {
     height: 100%;
     width: 95%;
+    max-width: 75.288rem;
     border: #f57c00;
     margin: auto;
     margin-bottom: 15px;
@@ -1423,9 +1431,18 @@ h2 {
     border-radius: 5px;
     display: none;
 }
-.galleryCustom{
+
+.galleryCustom {
     padding: 15px;
 }
+
+@media(max-width:1260) {
+    .container {
+        height: 100%;
+        width: 95%;
+    }
+}
+
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
@@ -1444,7 +1461,7 @@ h2 {
         flex-direction: column;
     }
 
-    
+
 
     .top-nav {
         flex-direction: column;
@@ -1490,7 +1507,7 @@ h2 {
         /* Center align on small screens */
         min-width: 100%;
         margin-left: 30px
-        /* Take full width */
+            /* Take full width */
     }
 
     .footer-section.contact-section .contact-info {
@@ -1504,8 +1521,12 @@ h2 {
     .compact-contact-form {
         margin-left: 1.7rem;
     }
-    .footer-section.contact-section h3 {
-                margin-left: 2.5rem;
 
+    .footer-section.contact-section h3 {
+        margin-left: 2.5rem;
+    }
+
+    .page-header img {
+        max-width: 98%;
     }
 }

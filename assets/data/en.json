@@ -33,13 +33,13 @@
       "location": "<b>Online</b>"
     }
   ],
-  "physical_programs_title": "IEO/OTHER PROGRAMS",
+  "physical_programs_title": "OTHER PROGRAMS",
   "physical_programs": [
     {
       "redirectUrl":"https://online.sadhguru.org/event-register?event=inner-engineering-4-days-kolkata-south-28-aug-2025-14239",
       "src": "assets/images/Physical_Programs-1.png",
       "date": "<b>August 28-31</b>",
-      "location": "<b>Online</b>",
+      "location": "<b>In-Person</b>",
       "details":"4 Days Inner Engineering (English)"
     }
   ],
